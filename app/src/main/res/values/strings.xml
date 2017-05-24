@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Макси</string>
+    <string name="icon">Иконка</string>
+    <string name="logo">Логотип</string>
+    <string name="auth">Авторизоваться</string>
+    <string name="card">Карта покупателя</string>
+    <string name="promotions">Акции и скидки</string>
+    <string name="basket">Списки покупок</string>
+    <string name="shops">Магазины</string>
+    <string name="reviews">Отзывы и пожелания</string>
+    <string name="secret_shopper">Тайный покупатель</string>
+    <string name="profile_settings">Настройки профиля</string>
+    <string name="in_developing">В разработке</string>
+    <string name="about">О компании</string>
+    <string name="phone_label">Горячая линия «Макси»</string>
+    <string name="phone">8-800-100-27-27</string>
+    <string name="email_label">Электронный адрес</string>
+    <string name="email">crm@maxi-net.ru</string>
+    <string name="save">Сохранить</string>
+    <string name="card_error">Номер карты должен содержать не менее 8 цифр</string>
+
+    <string name="hint_data">Введите что-нибудь</string>
+
+    <string name="hint_mask">Маска</string>
+    <string name="choose_mask">Выбрать маску</string>
+    <string name="slots_behaviour">Слоты</string>
+    <string name="static_mask_button">Готовая маска</string>
+    <string name="custom_mask_button">Произвольная маска</string>
+    <string name="mask_phone">Номер телефона</string>
+    <string name="mask_card">Номер карты (Visa, Mastercard)</string>
+    <string name="mask_card_maestro">Номер карты (Maestro)</string>
+    <string name="mask_passport">Серия и номер паспорта</string>
+    <string name="mask_preview">Маска: %s</string>
+    <string name="hide_hardcoded_head">Скрывать предустановленный заголовок маски</string>
+    <string name="forbid_move_left">Запрет перемещения курсора левее определенного символа, при удалении символов</string>
+    <string name="replace_8_to_7">Замена 8 на 7 в +7</string>
+    <string name="fill_when_install">Заголовок заполняется сразу, запрет перемещения курсора левее</string>
+    <string name="forbid_move_right">Запрет перемещения курсора правее определенного символа, при вводе новых символов</string>
+
+</resources>

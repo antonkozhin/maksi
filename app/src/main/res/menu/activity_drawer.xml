@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_auth"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/auth"/>
+        <item
+            android:id="@+id/nav_card"
+            android:icon="@drawable/ic_menu_card"
+            android:title="@string/card"/>
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/ic_menu_offer_list"
+            android:title="@string/promotions"/>
+        <item
+            android:id="@+id/nav_basket"
+            android:icon="@drawable/ic_menu_purchase_list"
+            android:title="@string/basket"/>
+        <item
+            android:id="@+id/nav_shops"
+            android:icon="@drawable/ic_menu_shops"
+            android:title="@string/shops"/>
+        <item
+            android:id="@+id/nav_reviews"
+            android:icon="@drawable/ic_menu_feedback"
+            android:title="@string/reviews"/>
+        <item
+            android:id="@+id/nav_secret_shopper"
+            android:icon="@drawable/ic_menu_secret_agent"
+            android:title="@string/secret_shopper"/>
+        <item
+            android:id="@+id/nav_profile_settings"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/profile_settings"/>
+    </group>
+
+</menu>
