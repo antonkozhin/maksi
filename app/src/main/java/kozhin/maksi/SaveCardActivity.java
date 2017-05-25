@@ -26,7 +26,7 @@ public class SaveCardActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_save_card);
-        setupDrawerLayout();
+        setupDrawerLayout(true);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener((View view) -> {
             saveCardNumber();

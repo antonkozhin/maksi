@@ -15,7 +15,7 @@ public class AboutActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_about);
 		PreferencesManager.init(this);
-		setupDrawerLayout();
+		setupDrawerLayout(false);
 	}
 
 	@SuppressWarnings("StatementWithEmptyBody")

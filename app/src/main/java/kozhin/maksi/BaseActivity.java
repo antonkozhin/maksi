@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class BaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -30,13 +31,22 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 		return true;
 	}
 
-	protected void setupDrawerLayout() {
+	protected void setupDrawerLayout(boolean showHomeIsUp) {
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);
+		if (getSupportActionBar() != null) {
+			getSupportActionBar().setDisplayHomeAsUpEnabled(showHomeIsUp);
+		}
 		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.app_name, R.string.app_name);
+		toggle.setDrawerIndicatorEnabled(!showHomeIsUp);
 		drawer.addDrawerListener(toggle);
 		toggle.syncState();
+		if (showHomeIsUp) {
+			toolbar.setNavigationOnClickListener((View v) -> {
+				onBackPressed();
+			});
+		}
 		NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
 		navigationView.setItemIconTintList(null);
 		navigationView.setNavigationItemSelectedListener(this);

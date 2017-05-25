@@ -21,7 +21,7 @@ public class CardActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_card);
 		PreferencesManager.init(this);
-		setupDrawerLayout();
+		setupDrawerLayout(true);
 		FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 		fab.setOnClickListener((View view) -> {
 			editCardNumber();
